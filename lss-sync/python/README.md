@@ -46,3 +46,14 @@ Run tests from the `lss-sync/` SDK directory with `python -m unittest discover -
 MSc Computer Science, Kabul University; Instructor at the National Institute of Management and Administration (NIMA).
 
 Copyright (c) 2026 Safi Ullah Mirzai. Licensed under [MIT](LICENSE).
+
+## Runnable integration examples
+
+See the [step-by-step integration guide](https://github.com/Kingsum007/lss/blob/v0.1.2/lss-sync/examples/README.md) for an offline-save walkthrough, browser demo, Python client, and authenticated server adapter.
+
+```sh
+python -m lss_sync.examples.server
+# In a second terminal:
+python -m lss_sync.examples.client save
+python -m lss_sync.examples.client sync
+```

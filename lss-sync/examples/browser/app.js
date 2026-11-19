@@ -1,8 +1,51 @@
-import {BrowserSyncEngine} from '/src/index.js';
-const sync=new BrowserSyncEngine({dbName:'sdk-example',token:'local-demo-only'});
-const status=document.querySelector('#status');
-const refresh=async()=>{const s=await sync.snapshot();status.textContent=JSON.stringify({unlocked:s.unlocked,counts:s.counts,batchBytes:s.batchBytes,error:s.lastError},null,2);};
-await sync.init();sync.addEventListener('change',refresh);await refresh();
-document.querySelector('#unlock').onclick=async()=>{try{const p=document.querySelector('#password');const s=await sync.snapshot();if(s.configured)await sync.unlock(p.value);else await sync.setup(p.value);p.value='';}catch(e){status.textContent=e.message;}};
-document.querySelector('#save').onclick=async()=>{try{await sync.save(JSON.parse(document.querySelector('#payload').value));await refresh();}catch(e){status.textContent=e.message;}};
-document.querySelector('#lock').onclick=()=>{sync.lock();document.querySelector('#payload').value='';};
+// The local server exposes the same modules that bundlers import from 'lss-sync'.
+import { BrowserSyncEngine } from '/src/index.js';
+
+const status = document.querySelector('#status');
+const offline = document.querySelector('#offline');
+const sync = new BrowserSyncEngine({
+  dbName: 'lss-integration-example',
+  endpoint: '/api/sync',
+  token: 'local-demo-only', // Demo credential. Supply your application's token in production.
+  transport: (...args) => {
+    if (offline.checked) throw new TypeError('Simulated offline connection');
+    return fetch(...args);
+  }
+});
+
+async function refresh() {
+  const state = await sync.snapshot();
+  status.textContent = JSON.stringify({
+    unlocked: state.unlocked,
+    counts: state.counts,
+    batchBytes: state.batchBytes,
+    error: state.lastError
+  }, null, 2);
+}
+
+async function showErrors(action) {
+  try { await action(); await refresh(); }
+  catch (error) { status.textContent = error.message; }
+}
+
+await sync.init();
+sync.addEventListener('change', refresh);
+await refresh();
+
+document.querySelector('#unlock').onclick = () => showErrors(async () => {
+  const input = document.querySelector('#password');
+  const state = await sync.snapshot();
+  try {
+    if (state.configured) await sync.unlock(input.value);
+    else await sync.setup(input.value);
+  } finally { input.value = ''; }
+});
+document.querySelector('#save').onclick = () => showErrors(async () => {
+  await sync.save(JSON.parse(document.querySelector('#payload').value));
+});
+document.querySelector('#lock').onclick = () => showErrors(async () => {
+  sync.lock();
+  document.querySelector('#payload').value = '';
+});
+// Restoring transport allows the running scheduler to retry; it honors retry delays.
+// Call await sync.close() when disposing this integration in a single-page app.

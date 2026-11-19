@@ -46,21 +46,21 @@ Label the first version as a research preview. It provides the synchronization a
 
 When adding another language, retain the protocol and shared fixtures. Confirm canonical serialization, digests, encryption/AAD, byte limits, batch-control transitions, and receipt handling across implementations before declaring compatibility. Packaging the same rules in another language improves adoption; scientific contribution still depends on the algorithm's specified behavior and measured evaluation.
 
-## Version 0.1.1 registry commands
+## Version 0.1.2 registry commands
 
 Run these commands from the `lss-sync/` SDK directory after local authentication.
 Keep credentials outside the repository. Never include tokens in chat or commits.
 
 ```powershell
 npm login --registry=https://registry.npmjs.org/
-npm publish ./dist/lss-sync-0.1.1.tgz --access public --tag latest
-.\.venv\Scripts\python.exe -m twine check ./dist/lss_sync-0.1.1-py3-none-any.whl ./dist/lss_sync-0.1.1.tar.gz
-.\.venv\Scripts\python.exe -m twine upload --repository pypi ./dist/lss_sync-0.1.1-py3-none-any.whl ./dist/lss_sync-0.1.1.tar.gz
+npm publish ./dist/lss-sync-0.1.2.tgz --access public --tag latest
+.\.venv\Scripts\python.exe -m twine check ./dist/lss_sync-0.1.2-py3-none-any.whl ./dist/lss_sync-0.1.2.tar.gz
+.\.venv\Scripts\python.exe -m twine upload --repository pypi ./dist/lss_sync-0.1.2-py3-none-any.whl ./dist/lss_sync-0.1.2.tar.gz
 ```
 
 Twine uses local PyPI credentials and can prompt for an API token in the terminal
 (username `__token__`). npm may require a second-factor authentication challenge.
 The first release remains a research preview despite using the default npm tag.
-After upload, verify each registry reports version 0.1.1 before announcing availability.
-Consumers can then install with `npm install lss-sync@0.1.1` or
-`python -m pip install lss-sync==0.1.1`.
+After upload, verify each registry reports version 0.1.2 before announcing availability.
+Consumers can then install with `npm install lss-sync@0.1.2` or
+`python -m pip install lss-sync==0.1.2`.

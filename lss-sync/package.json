@@ -1,6 +1,6 @@
 {
   "name": "lss-sync",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lightweight encrypted offline synchronization SDK for browser applications",
   "type": "module",
   "main": "./src/index.js",
@@ -20,7 +20,10 @@
     "README.md",
     "LICENSE",
     "docs/PROTOCOL.md",
-    "docs/SECURITY.md"
+    "docs/SECURITY.md",
+    "examples/README.md",
+    "examples/browser",
+    "CHANGELOG.md"
   ],
   "sideEffects": false,
   "license": "MIT",

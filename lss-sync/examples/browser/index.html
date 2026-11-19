@@ -1,1 +1,15 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>LSS SDK example</title><body><h1>LSS SDK integration example</h1><p>Use synthetic data. The server is a local research example.</p><label>Passphrase <input id="password" type="password" minlength="12"></label><button id="unlock">Create or unlock vault</button><p><textarea id="payload" rows="8" cols="55">{"kind":"inspection","passed":true,"quantity":"12.50"}</textarea></p><button id="save">Save encrypted payload</button><button id="lock">Lock</button><pre id="status"></pre><script type="module" src="/app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>LSS integration example</title></head>
+<body>
+<h1>LSS: save offline, sync when connected</h1>
+<p>Local demonstration. Use synthetic records and a demo passphrase.</p>
+<label>Vault passphrase <input id="password" type="password" minlength="12" autocomplete="off"></label>
+<button id="unlock">Create or unlock vault</button>
+<p><label><input id="offline" type="checkbox"> Simulate unavailable server</label></p>
+<label>JSON record<br><textarea id="payload" rows="8" cols="55">{"kind":"inspection","passed":true,"quantity":"12.50"}</textarea></label>
+<p><button id="save">Save encrypted record</button> <button id="lock">Lock vault</button></p>
+<p>Uncheck the simulation to allow retries. ACKNOWLEDGED means the server confirmed receipt.</p>
+<pre id="status" aria-live="polite"></pre>
+<script type="module" src="/app.js"></script>
+</body></html>

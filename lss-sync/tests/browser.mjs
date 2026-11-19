@@ -22,5 +22,14 @@ try{
   return{before:before.records.map(r=>r.payload),count:state.counts.ACKNOWLEDGED,attempts:state.metrics.attempts,hidden:locked.records.every(r=>!('payload'in r))};
  });
  assert.equal(result.count,5);assert.ok(result.attempts>=2);assert.equal(result.hidden,true);assert.ok(result.before.includes(false));assert.ok(result.before.includes(null));assert.ok(result.before.includes(0));
- console.log('PASS browser generic payloads, Python endpoint, lost-response replay and locked snapshots');
+ await page.locator('#offline').check();
+ await page.locator('#password').fill('Synthetic browser demo passphrase');
+ await page.locator('#unlock').click();
+ await page.waitForFunction(()=>JSON.parse(document.querySelector('#status').textContent).unlocked === true);
+ await page.locator('#save').click();
+ await page.waitForFunction(()=>Object.values(JSON.parse(document.querySelector('#status').textContent).counts).reduce((a,b)=>a+b,0)>=1);
+ assert.equal(JSON.parse(await page.locator('#status').textContent()).counts.ACKNOWLEDGED || 0,0);
+ await page.locator('#offline').uncheck();
+ await page.waitForFunction(()=>JSON.parse(document.querySelector('#status').textContent).counts.ACKNOWLEDGED>=1,{},{timeout:20000});
+ console.log('PASS browser SDK and example UI: offline save, reconnect, receipt, replay and lock');
 }finally{await browser?.close();server.kill();}

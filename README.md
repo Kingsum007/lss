@@ -28,6 +28,7 @@ Instructor at the National Institute of Management and Administration (NIMA)
 
 ## Documentation
 
+- [Runnable integration examples](lss-sync/examples/README.md)
 - [SDK installation and usage](lss-sync/README.md)
 - [راهنمای دری](lss-sync/docs/README.fa.md)
 - [Python package](lss-sync/python/README.md)
