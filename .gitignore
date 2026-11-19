@@ -1,0 +1,26 @@
+# Thesis proposals, reference template, research drafts and rendered documents
+/work/
+/outputs/
+/MS Thesis Proposal*.docx
+/MS Thesis Proposal*.pdf
+
+# Local dependencies and generated build/test artifacts
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+test-results/
+
+# Local application data and secrets
+data/
+*.sqlite3*
+*.sync.lock
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+*.log
