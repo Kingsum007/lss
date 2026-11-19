@@ -1,14 +1,14 @@
 # LSS synchronization SDK
 
-Reusable encrypted offline synchronization for JavaScript/TypeScript browser applications and Python applications. This local research preview is not yet published on GitHub, npm, or PyPI. Licensed under the MIT License. Copyright (c) 2026 Safi Ullah Mirzai.
+Reusable encrypted offline synchronization for JavaScript/TypeScript browser applications and Python applications. This is a research preview. Source: [GitHub](https://github.com/Kingsum007/lss). Packages: [npm](https://www.npmjs.com/package/lss-sync) and [PyPI](https://pypi.org/project/lss-sync/). Licensed under the MIT License. Copyright (c) 2026 Safi Ullah Mirzai.
 
 See [راهنمای دری](docs/README.fa.md), [protocol](docs/PROTOCOL.md), [security boundaries](docs/SECURITY.md), and [release instructions](docs/RELEASING.md).
 
-## Install locally
+## Install
 
 ```sh
-npm install /path/to/lss-sync
-python -m pip install /path/to/lss-sync/python
+npm install lss-sync
+python -m pip install lss-sync
 ```
 
 The browser package has no runtime JavaScript dependencies and includes TypeScript declarations. Python uses the maintained `cryptography` library and SQLite. Use Python 3.10+ and a current browser supporting Web Crypto, IndexedDB and Web Locks.
@@ -71,18 +71,21 @@ AES-256-GCM protects persisted payloads. A passphrase-derived key is retained in
 
 This is an upload-only append-only protocol. No attachments, edits/merging, key recovery or background operation after the application closes are included. The authorized server receives readable payloads over HTTPS. Offline encryption does not hide data from malicious code in an unlocked application.
 
-## GitHub installation after publication
+## Install from source
 
-The following are templates, not existing published locations. Replace OWNER and create the indicated release first.
+Install from the GitHub repository (the SDK is in the lss-sync subdirectory):
 
 ```sh
-npm install github:OWNER/lss-sync#v0.1.0
-python -m pip install 'git+https://github.com/OWNER/lss-sync.git@v0.1.0#subdirectory=python'
+git clone https://github.com/Kingsum007/lss.git
+npm install ./lss/lss-sync
+python -m pip install 'git+https://github.com/Kingsum007/lss.git#subdirectory=lss-sync/python'
 ```
 
 The MIT License permits reuse under its terms. Preserve the copyright and license notice in redistributed copies.
 
 ## Validation
+
+Run these commands from the `lss-sync/` SDK directory, not the Git repository root.
 
 ```sh
 npm install

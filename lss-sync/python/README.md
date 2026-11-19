@@ -2,7 +2,13 @@
 
 Encrypted offline persistence and adaptive upload batches for Python applications. This is a research preview, not a hosted service or a production authentication system. Licensed under the MIT License. Copyright (c) 2026 Safi Ullah Mirzai.
 
-Install from this repository root with `python -m pip install ./python`, or install the built wheel. Python 3.10+ and `cryptography` are required.
+Install from [PyPI](https://pypi.org/project/lss-sync/):
+
+```sh
+python -m pip install lss-sync
+```
+
+Python 3.10+ is required; pip installs the `cryptography` dependency automatically. For source installation, run `python -m pip install ./lss-sync/python` from the [GitHub repository](https://github.com/Kingsum007/lss) root.
 
 ```python
 from lss_sync import SyncClient
@@ -32,7 +38,7 @@ Custom transports implement `transport(body: bytes, headers: dict, timeout: floa
 
 The SQLite path identifies a vault. Use distinct paths per account/device context. OS file locking excludes multiple senders using the same local vault and is released on process exit; use a local filesystem with functioning OS locks. Unsynchronized data requires the original vault and passphrase. This package does not provide key recovery, key rotation, multi-device merge, or a protection guarantee against malicious code in an unlocked process.
 
-Run tests from the repository root with `python -m unittest discover -s python/tests -v` after installing the package. See the repository's shared protocol and security documentation for the cross-language contract.
+Run tests from the `lss-sync/` SDK directory with `python -m unittest discover -s python/tests -v` after installing the package. See the repository's shared protocol and security documentation for the cross-language contract.
 
 ## Author and license
 

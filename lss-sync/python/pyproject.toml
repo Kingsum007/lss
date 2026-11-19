@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lss-sync"
-version = "0.1.0"
+version = "0.1.1"
 description = "Encrypted offline outbox and bounded adaptive synchronization"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -17,6 +17,10 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Topic :: Database",
 ]
+
+[project.urls]
+Repository = "https://github.com/Kingsum007/lss"
+Issues = "https://github.com/Kingsum007/lss/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

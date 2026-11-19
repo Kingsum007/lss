@@ -6,7 +6,7 @@ LSS یک بستهٔ قابل‌استفاده در پروژه‌های دیگر 
 
 ## وضعیت نسخه
 
-این نسخه یک پیش‌نمایش پژوهشی است. آماده‌کردن فایل بسته و مستندات به معنی نشر در GitHub، npm یا PyPI نیست. آدرس‌های دارای `OWNER` در این راهنما نمونه‌اند؛ پس از ایجاد مخزن واقعی باید نام حساب یا سازمان جای آن نوشته شود.
+این نسخه یک پیش‌نمایش پژوهشی است. بسته با نام `lss-sync` در npm و PyPI قابل نصب است. مخزن پروژه در GitHub با آدرس https://github.com/Kingsum007/lss قرار دارد.
 
 این پروژه تحت مجوز MIT منتشر می‌شود. حق نشر © ۲۰۲۶ متعلق به Safi Ullah Mirzai است. در استفاده و توزیع مجدد، متن مجوز و اطلاعیهٔ حق نشر حفظ شود.
 
@@ -21,18 +21,18 @@ LSS یک بستهٔ قابل‌استفاده در پروژه‌های دیگر 
 
 اندازهٔ بسته از ۲ کیبی‌بایت شروع می‌شود و حداکثر ۱۶ کیبی‌بایت است. پس از دو ارسال کامل و سریع، اندازه کمی افزایش می‌یابد؛ پس از ارسال کند یا ناموفق، کاهش می‌یابد. این اندازه شامل تمام بدنهٔ درخواست است، نه فقط متن داده.
 
-## نصب محلی
+## نصب بسته
 
-پس از دریافت سورس پروژه، برای نصب بستهٔ مرورگر در پروژهٔ JavaScript خود از مسیر محلی استفاده کنید:
+برای نصب بستهٔ مرورگر در پروژهٔ JavaScript یا TypeScript خود:
 
 ```powershell
-npm install ../lss-sync
+npm install lss-sync
 ```
 
-برای Python از داخل پوشهٔ مخزن:
+برای Python نسخهٔ 3.10 یا بالاتر:
 
 ```powershell
-python -m pip install ./python
+python -m pip install lss-sync
 ```
 
 نصب وابستگی‌ها معمولاً برای بار نخست به اینترنت نیاز دارد. پس از نصب و آماده‌شدن برنامه، ثبت آفلاین به اتصال سرور وابسته نیست.
@@ -40,9 +40,9 @@ python -m pip install ./python
 ## استفاده در JavaScript و TypeScript
 
 ```javascript
-import { SyncEngine } from 'lss-sync';
+import { BrowserSyncEngine } from 'lss-sync';
 
-const sync = new SyncEngine({
+const sync = new BrowserSyncEngine({
   dbName: 'my-project-vault',
   endpoint: '/api/sync',
   token: accessToken
@@ -89,13 +89,14 @@ client.start()
 
 `start()` در Python ارسال‌کنندهٔ پس‌زمینه را آغاز می‌کند. برای کنترل دستی یک نوبت ارسال، `sync_once()` موجود است. `stop()` زمان‌بندی را متوقف می‌کند؛ `lock()` کلید را از دسترس بسته خارج می‌کند؛ `close()` برنامهٔ ارسال را متوقف و محل ذخیره را قفل می‌کند. کلید خام و گذرواژه در دیتابیس ذخیره نمی‌شوند.
 
-## نصب مستقیم از GitHub پس از نشر
+## نصب مستقیم از GitHub
 
-دستورهای زیر فقط پس از ایجاد مخزن و تگ `v0.1.0` قابل اجرا هستند. `OWNER` باید با نام واقعی حساب GitHub جایگزین شود.
+برای نصب از مخزن GitHub، دستورهای زیر را اجرا کنید:
 
 ```powershell
-npm install github:OWNER/lss-sync#v0.1.0
-python -m pip install "git+https://github.com/OWNER/lss-sync.git@v0.1.0#subdirectory=python"
+git clone https://github.com/Kingsum007/lss.git
+npm install ./lss/lss-sync
+python -m pip install "git+https://github.com/Kingsum007/lss.git#subdirectory=lss-sync/python"
 ```
 
 استفاده از یک تگ مشخص کمک می‌کند پروژهٔ شما به نسخه‌ای معلوم وابسته باشد. برای اجرای نمونه‌ها و آزمایش‌ها، دستورهای README اصلی مخزن را دنبال کنید.
