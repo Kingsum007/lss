@@ -1,0 +1,1 @@
+{"id":"/","name":"LSS Offline Site Logs","short_name":"LSS Logs","description":"Encrypted offline site logs with adaptive synchronization.","start_url":"/","scope":"/","display":"standalone","background_color":"#f5f5ef","theme_color":"#183f3b","icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}

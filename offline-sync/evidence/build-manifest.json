@@ -1,0 +1,27 @@
+{
+  "sourceSha256": {
+    "README.md": "0e12fd975c1af7887a48cfd19a45c462338b1eb6b03369ef4101a3895640365a",
+    "ALGORITHM.md": "676bd7993e7aa2080f08586c4b07d8039041bbfec46946b4ee82c6397a821048",
+    "VALIDATION.md": "c235e78c5c9d85e4e7028470493c77429668a1131635e5e5c901a510ac1cee97",
+    "package.json": "45c78746e6a4e8be7afe94a234ed2cfefec7d2fb7d23a9fbedf0fb47a638aa17",
+    ".gitignore": "b393f49d66d1b74b380ee8aae44f35f22555f1586824f7ebe02ce1c560a01aa7",
+    "server.py": "4274d297369386aa47caf1af7d47994e47a60a0d1e029287af80b40830914b8e",
+    "start-demo.cmd": "4931c53f3d115b1e763e2c290351c43ce94aab276503442801df826005e1a232",
+    "public/app.js": "eb7fb410ab3ab6790c6f1648ded2963d1fbb185dacb42462b4675cbb73ab4113",
+    "public/icon.svg": "f1fd61db1b6656d2240a0d7b05fc6190fc48fd21883ef19ab4c1bbd2937ee2c8",
+    "public/index.html": "f21c3374afccb2cb34a77eb258e4a08a93b89149fe33f8d7519010ecd58f4847",
+    "public/manifest.webmanifest": "46dbec3702d6066703288a529e86f048fb23a278d104d4b86c800f5659419e3d",
+    "public/styles.css": "70256ab6d3f91e630d7f3518086c8665eb65c35707d809b232a918c184587195",
+    "public/sw.js": "277b4a50bfed5c5e53f040a149d5c1df286a84ebaa51a3c3dfe54f5b1de5322d",
+    "public/lib/crypto.js": "9daf32e6ab7d3fc3e5dd010e3b8c5c2ba35afbdd5bb8487f137b4ac75f2dc08f",
+    "public/lib/encoding.js": "7726ac7dbb3f49e69e587682342f2dff57f24c13c28939932ed1fdbd83ae9594",
+    "public/lib/engine.js": "f4f52b0dc1f065afb1654686cb3a462819b96a05ce831450bf6be0af7b63a58c",
+    "public/lib/policy.js": "a4558e559a82f2057a9fa7ccdf215efd58464f7c3513e55b0f3f28dd988d5cf5",
+    "public/lib/store.js": "cc73c2ca44c385104d691bb0e90308ed080aaa6080fbdf602db3c7530d51bdf4",
+    "tests/benchmark.mjs": "b98478dd88dada50aaa3a8018dc7f5a4b11078d5346537bafdab099a3d678867",
+    "tests/browser.mjs": "201f972164211fd860b652fd6b2e82832b096f31d88452d9814363ecb1d8724c",
+    "tests/core.test.mjs": "5e71cf2b5e1b3ae1dc4f1d7c6771d219e0127e54b1fb5e9f2674014b9ff66868",
+    "tests/test_server.py": "487515d6170e18b97a3c3665938c33a39b70b037e30d272839f40c79180b7d0b"
+  },
+  "validation": "39 functional checks passed; nine short network trials completed; see VALIDATION.md"
+}

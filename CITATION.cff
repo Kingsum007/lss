@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this metadata."
+title: "LSS Lightweight Secure Synchronization SDK"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: "Mirzai"
+    given-names: "Safi Ullah"
+    affiliation: "Kabul University; National Institute of Management and Administration (NIMA)"

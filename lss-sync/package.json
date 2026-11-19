@@ -1,0 +1,41 @@
+{
+  "name": "lss-sync",
+  "version": "0.1.0",
+  "description": "Lightweight encrypted offline synchronization SDK for browser applications",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./policy": {
+      "types": "./src/policy.d.ts",
+      "import": "./src/policy.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "docs/PROTOCOL.md",
+    "docs/SECURITY.md"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "test:interop": "node tests/interop.mjs",
+    "typecheck": "tsc --noEmit --strict --target es2022 --module nodenext --lib es2022,dom tests/types.ts"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "playwright": "^1.56.1"
+  },
+  "author": "Safi Ullah Mirzai"
+}

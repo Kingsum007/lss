@@ -1,0 +1,97 @@
+{
+  "reportPath": "C:\\Users\\sumir\\Documents\\Codex\\2026-11-06\\reme\\offline-sync\\test-results\\browser-2026-11-17T02-03-09-038Z\\report.json",
+  "generatedAt": "2026-11-17T02:03:37.336Z",
+  "runtime": "v26.7.0",
+  "browser": "157.0.4341.46",
+  "purpose": "Functional browser checks with synthetic records and injected faults; not the 90-run thesis evaluation.",
+  "passed": 16,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "Encrypted persistence, locked views, and wrong-passphrase rejection",
+      "passed": true,
+      "durationMs": 1362
+    },
+    {
+      "name": "Atomic save failure never reports success or creates a queue entry",
+      "passed": true,
+      "durationMs": 983
+    },
+    {
+      "name": "Lost response after server commit retries the same ID without duplicate insertion",
+      "passed": true,
+      "durationMs": 1801
+    },
+    {
+      "name": "Restart recovers persisted IN_FLIGHT entries and uploads them",
+      "passed": true,
+      "durationMs": 1436
+    },
+    {
+      "name": "Corrupt ciphertext is retained and blocked while other records synchronize",
+      "passed": true,
+      "durationMs": 1092
+    },
+    {
+      "name": "Unverified server receipt cannot mark a local record acknowledged",
+      "passed": true,
+      "durationMs": 2102
+    },
+    {
+      "name": "Failed local acknowledgement commit retains the record for safe recovery",
+      "passed": true,
+      "durationMs": 2108
+    },
+    {
+      "name": "Unauthorized uploads pause without losing data and resume with valid credentials",
+      "passed": true,
+      "durationMs": 2064
+    },
+    {
+      "name": "Repeated synchronization triggers never start overlapping requests",
+      "passed": true,
+      "durationMs": 1904
+    },
+    {
+      "name": "Browser offline reload preserves the encrypted queue and cached app shell",
+      "passed": true,
+      "durationMs": 1405
+    },
+    {
+      "name": "Desktop and mobile app layouts remain usable without uncaught script errors",
+      "passed": true,
+      "durationMs": 1587,
+      "details": {
+        "screenshots": [
+          "desktop.png",
+          "mobile.png"
+        ]
+      }
+    },
+    {
+      "name": "Two workers sharing one vault serialize requests with the browser lock",
+      "passed": true,
+      "durationMs": 2195
+    },
+    {
+      "name": "Retry-After survives recovery and cannot be bypassed by repeated triggers",
+      "passed": true,
+      "durationMs": 3093
+    },
+    {
+      "name": "Lock cancels an unlock already waiting for local configuration",
+      "passed": true,
+      "durationMs": 1034
+    },
+    {
+      "name": "An IV collision including the key-check IV retries encryption atomically",
+      "passed": true,
+      "durationMs": 1028
+    },
+    {
+      "name": "Actual upload timeout retains the entry and recovery ignores an incorrect online hint",
+      "passed": true,
+      "durationMs": 1699
+    }
+  ]
+}

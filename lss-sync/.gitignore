@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+python/build/
+dist/
+data/
+test-results/
+*.sqlite3*
+*.sync.lock
+*.pem
+*.key
+.env

@@ -1,0 +1,16 @@
+{
+  "name": "lss-offline-sync",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lightweight secure offline synchronization research prototype",
+  "scripts": {
+    "start": "python server.py --demo",
+    "test": "node --test tests/core.test.mjs",
+    "test:server": "python -m unittest discover -s tests -p test_server.py -v",
+    "test:browser": "node tests/browser.mjs",
+    "benchmark": "node tests/benchmark.mjs"
+  },
+  "license": "MIT",
+  "author": "Safi Ullah Mirzai"
+}

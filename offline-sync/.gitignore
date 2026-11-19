@@ -1,0 +1,7 @@
+data/
+test-results/
+node_modules/
+__pycache__/
+*.pem
+*.key
+.env

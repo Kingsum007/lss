@@ -1,0 +1,647 @@
+{
+  "reportPath": "C:\\Users\\sumir\\Documents\\Codex\\2026-11-06\\reme\\offline-sync\\test-results\\benchmark-2026-11-17T02-00-22-169Z\\report.json",
+  "generatedAt": "2026-11-17T02:02:13.201Z",
+  "kind": "Quick engineering smoke benchmark",
+  "environment": {
+    "browser": "157.0.4341.46",
+    "node": "v26.7.0",
+    "os": "Windows_NT 10.0.26300 x64",
+    "cpu": "Intel(R) Core(TM) i7-9850H CPU @ 2.60GHz",
+    "logicalCpus": 12
+  },
+  "method": "Application-layer upload/download byte-rate delays and RTT around real HTTP and SQLite; deterministic availability windows and seeded jitter. No TCP, radio, or real mobile-link emulation.",
+  "limitations": [
+    "Quick mode uses 12 records and one repetition; P3-smoke uses 2-second on/off windows for 12 seconds. It is not the proposed 90-run evaluation.",
+    "Heap includes the measurement harness and garbage-collection effects; not a total browser memory measure.",
+    "Gzip size is an asset-size estimate; the demo server sends uncompressed static assets.",
+    "Times describe this machine and synthetic conditions, not Afghanistan network measurements."
+  ],
+  "assets": [
+    {
+      "file": "public\\app.js",
+      "bytes": 13241,
+      "gzipBytes": 4068
+    },
+    {
+      "file": "public\\icon.svg",
+      "bytes": 218,
+      "gzipBytes": 186
+    },
+    {
+      "file": "public\\index.html",
+      "bytes": 8859,
+      "gzipBytes": 2973
+    },
+    {
+      "file": "public\\lib\\crypto.js",
+      "bytes": 2379,
+      "gzipBytes": 857
+    },
+    {
+      "file": "public\\lib\\encoding.js",
+      "bytes": 2422,
+      "gzipBytes": 1090
+    },
+    {
+      "file": "public\\lib\\engine.js",
+      "bytes": 14840,
+      "gzipBytes": 4598
+    },
+    {
+      "file": "public\\lib\\policy.js",
+      "bytes": 1283,
+      "gzipBytes": 606
+    },
+    {
+      "file": "public\\lib\\store.js",
+      "bytes": 4930,
+      "gzipBytes": 1507
+    },
+    {
+      "file": "public\\manifest.webmanifest",
+      "bytes": 337,
+      "gzipBytes": 248
+    },
+    {
+      "file": "public\\styles.css",
+      "bytes": 10213,
+      "gzipBytes": 3017
+    },
+    {
+      "file": "public\\sw.js",
+      "bytes": 1074,
+      "gzipBytes": 540
+    }
+  ],
+  "totalAssetBytes": 59796,
+  "totalGzipAssetBytes": 19690,
+  "runs": [
+    {
+      "profile": "P1",
+      "settings": {
+        "name": "P1",
+        "kbps": 256,
+        "rttMs": 200,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "adaptive",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 1185.9000000000233,
+      "observationMs": 1185.9000000000233,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 4096,
+      "unlockMs": 250.5,
+      "saveMedianMs": 0.7000000000698492,
+      "saveP95Ms": 1.400000000023283,
+      "saveMs": [
+        1.400000000023283,
+        0.7000000000698492,
+        0.5999999999767169,
+        0.7999999999301508,
+        0.7000000000698492,
+        0.7999999999301508,
+        0.7000000000698492,
+        0.9000000000232831,
+        0.6999999999534339,
+        0.5999999999767169,
+        0.6999999999534339,
+        0.5
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 484254,
+      "traffic": {
+        "requests": 3,
+        "requestBytes": 8100,
+        "generatedResponseBytes": 2286,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P1",
+      "settings": {
+        "name": "P1",
+        "kbps": 256,
+        "rttMs": 200,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "fixed-small",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 1434.7000000000698,
+      "observationMs": 1434.7000000000698,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 2048,
+      "unlockMs": 251.20000000006985,
+      "saveMedianMs": 0.7999999999301508,
+      "saveP95Ms": 1.1999999999534339,
+      "saveMs": [
+        1.1999999999534339,
+        0.6999999999534339,
+        1,
+        1.099999999976717,
+        0.7999999999301508,
+        0.8000000000465661,
+        0.5999999999767169,
+        0.7000000000698492,
+        0.5999999999767169,
+        0.6999999999534339,
+        0.6000000000931323,
+        0.7999999999301508
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 516057,
+      "traffic": {
+        "requests": 4,
+        "requestBytes": 8116,
+        "generatedResponseBytes": 2312,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P1",
+      "settings": {
+        "name": "P1",
+        "kbps": 256,
+        "rttMs": 200,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "fixed-large",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 675.7000000000698,
+      "observationMs": 675.7000000000698,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 16384,
+      "unlockMs": 244.39999999990687,
+      "saveMedianMs": 0.8000000000465661,
+      "saveP95Ms": 1.3000000000465661,
+      "saveMs": [
+        1.3000000000465661,
+        0.8000000000465661,
+        0.8000000000465661,
+        0.6999999999534339,
+        0.9000000000232831,
+        0.9000000000232831,
+        0.9000000000232831,
+        0.5,
+        0.6999999999534339,
+        0.5999999999767169,
+        0.8000000000465661,
+        0.6999999999534339
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 453989,
+      "traffic": {
+        "requests": 1,
+        "requestBytes": 8068,
+        "generatedResponseBytes": 2234,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P2",
+      "settings": {
+        "name": "P2",
+        "kbps": 32,
+        "rttMs": 800,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "adaptive",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 5230.099999999977,
+      "observationMs": 5230.099999999977,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 4096,
+      "unlockMs": 258.39999999990687,
+      "saveMedianMs": 0.9000000000232831,
+      "saveP95Ms": 1.900000000023283,
+      "saveMs": [
+        1.900000000023283,
+        1.3000000000465661,
+        0.9000000000232831,
+        0.8000000000465661,
+        0.8000000000465661,
+        0.8999999999068677,
+        1,
+        0.7999999999301508,
+        0.7000000000698492,
+        0.9000000000232831,
+        1,
+        0.8000000000465661
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 863639,
+      "traffic": {
+        "requests": 3,
+        "requestBytes": 8100,
+        "generatedResponseBytes": 2286,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P2",
+      "settings": {
+        "name": "P2",
+        "kbps": 32,
+        "rttMs": 800,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "fixed-small",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 6162.20000000007,
+      "observationMs": 6162.20000000007,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 2048,
+      "unlockMs": 243.30000000004657,
+      "saveMedianMs": 0.5,
+      "saveP95Ms": 1,
+      "saveMs": [
+        1,
+        0.5,
+        0.6999999999534339,
+        0.5,
+        0.5,
+        0.5,
+        0.6999999999534339,
+        0.5,
+        0.6999999999534339,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 864115,
+      "traffic": {
+        "requests": 4,
+        "requestBytes": 8116,
+        "generatedResponseBytes": 2312,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P2",
+      "settings": {
+        "name": "P2",
+        "kbps": 32,
+        "rttMs": 800,
+        "outageWindowMs": 0,
+        "intermittentUntilMs": 0
+      },
+      "mode": "fixed-large",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 3537,
+      "observationMs": 3537,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 16384,
+      "unlockMs": 257.0999999999767,
+      "saveMedianMs": 0.6999999999534339,
+      "saveP95Ms": 1.1999999999534339,
+      "saveMs": [
+        1.1999999999534339,
+        0.5999999999767169,
+        0.7000000000698492,
+        0.6999999999534339,
+        0.8000000000465661,
+        0.6999999999534339,
+        0.5,
+        0.5,
+        0.40000000002328306,
+        0.6999999999534339,
+        0.6999999999534339,
+        0.5
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 578473,
+      "traffic": {
+        "requests": 1,
+        "requestBytes": 8068,
+        "generatedResponseBytes": 2234,
+        "lostResponses": 0,
+        "precommitFailures": 0
+      }
+    },
+    {
+      "profile": "P3-smoke",
+      "settings": {
+        "name": "P3-smoke",
+        "kbps": 16,
+        "rttMs": 1200,
+        "outageWindowMs": 2000,
+        "intermittentUntilMs": 12000
+      },
+      "mode": "adaptive",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 24726.099999999977,
+      "observationMs": 24726.099999999977,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 4096,
+      "unlockMs": 245.80000000004657,
+      "saveMedianMs": 0.5999999999767169,
+      "saveP95Ms": 1,
+      "saveMs": [
+        1,
+        0.5999999999767169,
+        0.7000000000698492,
+        0.5999999999767169,
+        0.8000000000465661,
+        0.7999999999301508,
+        0.40000000002328306,
+        0.5,
+        0.5,
+        0.39999999990686774,
+        0.2999999999301508,
+        0.40000000002328306
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 1053801,
+      "traffic": {
+        "requests": 12,
+        "requestBytes": 26361,
+        "generatedResponseBytes": 4020,
+        "lostResponses": 3,
+        "precommitFailures": 6
+      }
+    },
+    {
+      "profile": "P3-smoke",
+      "settings": {
+        "name": "P3-smoke",
+        "kbps": 16,
+        "rttMs": 1200,
+        "outageWindowMs": 2000,
+        "intermittentUntilMs": 12000
+      },
+      "mode": "fixed-small",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 38419.10000000009,
+      "observationMs": 38419.10000000009,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 2048,
+      "unlockMs": 244.30000000004657,
+      "saveMedianMs": 0.5999999999767169,
+      "saveP95Ms": 1,
+      "saveMs": [
+        1,
+        0.5,
+        0.5999999999767169,
+        0.8000000000465661,
+        0.5,
+        0.5999999999767169,
+        0.5999999999767169,
+        0.5999999999767169,
+        0.5,
+        0.5999999999767169,
+        0.5999999999767169,
+        0.5
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 1276347,
+      "traffic": {
+        "requests": 16,
+        "requestBytes": 30451,
+        "generatedResponseBytes": 3494,
+        "lostResponses": 2,
+        "precommitFailures": 9
+      }
+    },
+    {
+      "profile": "P3-smoke",
+      "settings": {
+        "name": "P3-smoke",
+        "kbps": 16,
+        "rttMs": 1200,
+        "outageWindowMs": 2000,
+        "intermittentUntilMs": 12000
+      },
+      "mode": "fixed-large",
+      "repetition": 0,
+      "records": 12,
+      "completed": true,
+      "completionMs": 24299.400000000023,
+      "observationMs": 24299.400000000023,
+      "deadlineMs": 45000,
+      "counts": {
+        "PENDING": 0,
+        "IN_FLIGHT": 0,
+        "ACKNOWLEDGED": 12,
+        "BLOCKED": 0
+      },
+      "finalBatchBytes": 16384,
+      "unlockMs": 243.09999999997672,
+      "saveMedianMs": 0.5999999999767169,
+      "saveP95Ms": 1.1999999999534339,
+      "saveMs": [
+        1.1999999999534339,
+        0.5,
+        0.5,
+        0.5,
+        0.5999999999767169,
+        0.6000000000931323,
+        0.5999999999767169,
+        0.5,
+        0.6999999999534339,
+        0.5999999999767169,
+        0.5999999999767169,
+        0.5
+      ],
+      "payloadBytes": [
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513,
+        513
+      ],
+      "heapGrowthBytes": 1350719,
+      "traffic": {
+        "requests": 14,
+        "requestBytes": 43168,
+        "generatedResponseBytes": 2338,
+        "lostResponses": 0,
+        "precommitFailures": 9
+      }
+    }
+  ]
+}

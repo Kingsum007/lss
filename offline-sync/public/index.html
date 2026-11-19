@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183f3b">
+  <meta name="description" content="Encrypted offline site logs with automatic synchronization when a connection is usable.">
+  <title>LSS · Offline site logs</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="LSS home"><span class="brand-mark" aria-hidden="true">L</span><span>LSS<span class="brand-caption">Offline site logs</span></span></a>
+    <div class="header-right"><span id="network-hint" class="connection-hint">Checking connection hint</span><span class="research-tag">Research prototype</span></div>
+  </header>
+  <main class="shell">
+    <div class="intro"><p class="eyebrow">NISHAT BROTHERS CONSTRUCTION COMPANY</p><h1>Your work, safely recorded.</h1><p>Capture a site update now. Let the application handle delivery when a connection is available.</p></div>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <section id="unsupported" class="card unsupported" hidden><h2>A secure browser is needed</h2><p id="unsupported-reason">Open this app through HTTPS or localhost in a current browser with Web Crypto and IndexedDB.</p></section>
+    <section id="vault-panel" class="vault-grid" aria-labelledby="vault-heading">
+      <div class="card vault-card">
+        <p class="eyebrow">PRIVATE ON THIS DEVICE</p><h2 id="vault-heading">Open your workspace</h2><p id="vault-description">Checking your encrypted local storage…</p>
+        <form id="vault-form">
+          <label for="passphrase">Passphrase</label><input id="passphrase" name="passphrase" type="password" autocomplete="current-password" required maxlength="256" disabled aria-describedby="passphrase-help">
+          <div id="confirm-row" hidden><label for="passphrase-confirm">Confirm passphrase</label><input id="passphrase-confirm" name="passphrase-confirm" type="password" autocomplete="new-password" maxlength="256"></div>
+          <p id="passphrase-help" class="field-note">The encryption key stays in memory while this workspace is unlocked.</p>
+          <button id="vault-submit" class="button primary" type="submit" disabled>Loading…</button>
+        </form>
+      </div>
+      <aside class="vault-explainer"><div class="route-art" aria-hidden="true"><span class="route-node">01</span><span class="route-line"></span><span class="route-node">02</span><span class="route-line"></span><span class="route-node final">03</span></div><h3>Save. Protect. Synchronize.</h3><p>Each entry is encrypted before it is saved to this browser. Small batches travel to the server when the workspace is open and unlocked.</p><p>A lost connection does not discard the queue. Retries keep the same record identity.</p><p class="scope-note">A focused prototype for append-only site logs. Use synthetic data for your experiments.</p></aside>
+    </section>
+    <div id="workspace" hidden>
+      <section class="status-strip" aria-label="Synchronization overview">
+        <div class="status-primary"><span id="sync-dot" class="status-dot" aria-hidden="true"></span><div><strong id="sync-status">Ready to record</strong><span id="sync-detail">Your entries are protected on this device.</span></div></div>
+        <div class="session-actions"><button id="sync-now" class="button subtle" type="button">Sync now <span aria-hidden="true">↗</span></button><button id="lock" class="button subtle" type="button">Lock workspace</button></div>
+      </section>
+      <section class="counts" aria-label="Record counts">
+        <div class="count-item"><span class="count-label">Waiting to send</span><strong id="count-pending">0</strong><span class="count-description">Stored and queued</span></div>
+        <div class="count-item"><span class="count-label">Sending</span><strong id="count-inflight">0</strong><span class="count-description">Awaiting receipt</span></div>
+        <div class="count-item"><span class="count-label">Acknowledged</span><strong id="count-acknowledged">0</strong><span class="count-description">Committed on server</span></div>
+        <div class="count-item"><span class="count-label">Needs attention</span><strong id="count-blocked">0</strong><span class="count-description">Kept on this device</span></div>
+      </section>
+      <div class="work-grid">
+        <section class="card entry-card" aria-labelledby="entry-heading"><div class="section-heading"><div><p class="eyebrow">CAPTURE</p><h2 id="entry-heading">New site log</h2></div><span class="pill">Works offline</span></div>
+          <form id="entry-form">
+            <div class="two-fields"><div><label for="site-code">Site code</label><input id="site-code" name="siteCode" required maxlength="32" placeholder="e.g. NBCC-01" autocomplete="off"></div><div><label for="occurred-at">Date and time</label><input id="occurred-at" name="occurredAt" type="datetime-local" required></div></div>
+            <label for="activity">Activity</label><textarea id="activity" name="activity" rows="5" required maxlength="1000" placeholder="Describe the work completed at this site…"></textarea><div class="field-end"><span class="field-note">One brief update per entry.</span><span id="activity-count" class="field-note">0 / 1000</span></div>
+            <div class="two-fields"><div><label for="quantity">Quantity <span class="optional">optional</span></label><input id="quantity" name="quantity" maxlength="32" inputmode="decimal" placeholder="e.g. 24" autocomplete="off"></div><div><label for="unit">Unit <span class="optional">optional</span></label><input id="unit" name="unit" maxlength="32" placeholder="e.g. m³" autocomplete="off"></div></div>
+            <div class="save-row"><button id="save-entry" class="button primary" type="submit">Save encrypted entry <span aria-hidden="true">+</span></button><span id="save-time" class="field-note">Saved locally before upload</span></div>
+          </form>
+        </section>
+        <aside class="card sync-card" aria-labelledby="delivery-heading"><p class="eyebrow">DELIVERY</p><h2 id="delivery-heading">Small batches. Safe retries.</h2><p class="muted">The batch limit adjusts after completed attempts. A record stays queued until its server receipt is saved locally.</p>
+          <div class="batch-display"><strong id="batch-limit">2</strong><span>KiB<br>current batch limit</span></div>
+          <dl class="metrics"><div><dt>Upload attempts</dt><dd id="metric-attempts">0</dd></div><div><dt>Request bodies</dt><dd id="metric-bytes">0 B</dd></div><div><dt>Last attempt</dt><dd id="metric-duration">—</dd></div><div><dt>Unlock time</dt><dd id="metric-unlock">—</dd></div></dl>
+          <details class="experiment-settings"><summary>Experiment controls</summary><label for="policy">Batching policy</label><select id="policy"><option value="adaptive">Adaptive · 2–16 KiB</option><option value="fixed-small">Fixed · 2 KiB</option><option value="fixed-large">Fixed · 16 KiB</option></select><label class="checkbox-row" for="pause-connection"><input id="pause-connection" type="checkbox"><span>Pause connection for demo</span></label><p class="field-note">Blocks uploads in this tab. Local saves remain available.</p><p id="demo-note" class="field-note" hidden>Local demo server · synthetic data only</p></details>
+          <details id="authentication-panel" class="experiment-settings"><summary>Server connection</summary><form id="token-form"><label for="server-token">Access token</label><input id="server-token" type="password" autocomplete="off" placeholder="Server access token"><p class="field-note">Kept only in memory for this session.</p><button class="button subtle" type="submit">Connect</button></form></details>
+        </aside>
+      </div>
+      <section class="card records-card" aria-labelledby="records-heading"><div class="section-heading"><div><p class="eyebrow">ON THIS DEVICE</p><h2 id="records-heading">Recent entries</h2></div><span class="field-note">Latest 50 records</span></div><div id="records-empty" class="empty-state"><span class="empty-symbol" aria-hidden="true">≡</span><strong>Your first entry starts here.</strong><p>Save a site log above. Its delivery status will appear here.</p></div><div id="records-list" class="records-list"></div></section>
+    </div>
+    <footer class="site-footer"><span>LSS · Lightweight Secure Synchronization</span><span id="offline-ready">Preparing offline application…</span></footer>
+  </main>
+  <noscript><p class="notice">JavaScript is required to encrypt and synchronize site logs.</p></noscript>
+</body>
+</html>

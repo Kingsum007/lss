@@ -1,0 +1,240 @@
+ASSET img {'src': 'https://sava.af/wp-content/uploads/2026/08/final-logo-blue.png', 'alt': 'ساوا'}
+
+
+
+
+
+
+
+
+
+
+
+TEXT ساوا سیستم حسابداری و مدیریت تجارت در افغانستان است که خرید، فروش، گدام، نسیه مشتریان و مصارف شما را در یک‌جا مدیریت میکند . با چند ارز و بدون انترنت.
+
+
+
+
+ASSET img {'fetchpriority': 'high', 'decoding': 'async', 'width': '2560', 'height': '1493', 'src': 'https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-scaled.avif', 'class': 'attachment-full size-full wp-image-3090', 'alt': 'سیستم حسابداری و مدیریت تجارت', 'srcset': 'https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-scaled.avif 2560w, https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-300x175.avif 300w, https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-1024x597.avif 1024w, https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-768x448.avif 768w, https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-1536x896.avif 1536w, https://sava.af/wp-content/uploads/2026/09/Computer-screen-dashboard@2x-2048x1195.avif 2048w', 'sizes': '(max-width: 2560px) 100vw, 2560px'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/arasta-logo.png', 'alt': 'arasta-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/belectric-logo.png', 'alt': 'belectric-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/buddha-logo.png', 'alt': 'buddha-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/ehsanparviz-logo.png', 'alt': 'ehsanparviz-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/electroshik-logo.png', 'alt': 'electroshik-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/hadita-logo-300x83.png', 'alt': 'hadita-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/hvacpro-logo.png', 'alt': 'hvacpro-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/kabulikala-logo.png', 'alt': 'kabulikala-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/lahza-logo.png', 'alt': 'lahza-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/milad-logo.png', 'alt': 'milad-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/mohsenabaeuty-logo.png', 'alt': 'mohsenabaeuty-logo'}
+ASSET img {'decoding': 'async', 'class': 'swiper-slide-image', 'src': 'https://sava.af/wp-content/uploads/2026/09/samsung-logo.png', 'alt': 'samsung-logo'}
+TEXT چرا ساوا
+
+TEXT ساوا ماهیت بازار افغانستان را میداند
+
+TEXT هر دکاندار افغان با این واقعیت‌ها روبه‌رو است: انترنت ناپایدار، چند ارز، تقویم و زبان محلی، مصارف تقسیم‌نشده، اسناد قابل حذف. ساوا از پایه برای همین واقعیت‌ها ساخته شده.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TEXT همه مورد بالا، چیز هایی است که ساوا در پس‌زمینه حساب می‌کند — بدون اینکه لازم باشد کاری کنید.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ASSET img {'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/purchase-landed-cost.webp', 'class': 'attachment-large size-large wp-image-889', 'alt': 'امکانات سیستم حسابداری ساوا . محاسبه قیمت تمام\u200cشده خرید با هزینه\u200cهای جانبی در ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/purchase-landed-cost.webp 880w, https://sava.af/wp-content/uploads/2026/08/purchase-landed-cost-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/purchase-landed-cost-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/sales-credit.webp', 'class': 'attachment-large size-large wp-image-890', 'alt': 'امکانات سیستم حسابداری ساوا / فاکتور فروش نقدی و نسیه در سیستم حسابداری ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/sales-credit.webp 880w, https://sava.af/wp-content/uploads/2026/08/sales-credit-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/sales-credit-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/10/فیلد-دلخواه-ساختن-فیلد.webp', 'class': 'attachment-large size-large wp-image-3273', 'alt': '', 'srcset': 'https://sava.af/wp-content/uploads/2026/10/فیلد-دلخواه-ساختن-فیلد.webp 880w, https://sava.af/wp-content/uploads/2026/10/فیلد-دلخواه-ساختن-فیلد-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/10/فیلد-دلخواه-ساختن-فیلد-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/batch-expiry.webp', 'class': 'attachment-large size-large wp-image-897', 'alt': 'مدیریت بچ و تاریخ انقضای محصول در سیستم ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/batch-expiry.webp 880w, https://sava.af/wp-content/uploads/2026/08/batch-expiry-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/batch-expiry-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/party-accounts-a.webp', 'class': 'attachment-large size-large wp-image-900', 'alt': 'پیگیری حساب نسیه مشتری و فروشنده در سیستم ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/party-accounts-a.webp 880w, https://sava.af/wp-content/uploads/2026/08/party-accounts-a-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/party-accounts-a-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/cash-bank-exchange.webp', 'class': 'attachment-large size-large wp-image-901', 'alt': 'مدیریت صندوق، حساب بانکی و صرافی در سیستم حسابداری ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/cash-bank-exchange.webp 880w, https://sava.af/wp-content/uploads/2026/08/cash-bank-exchange-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/cash-bank-exchange-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/daily-expenses.webp', 'class': 'attachment-large size-large wp-image-902', 'alt': 'ثبت مصارف روزانه دکان در سیستم حسابداری ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/daily-expenses.webp 880w, https://sava.af/wp-content/uploads/2026/08/daily-expenses-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/daily-expenses-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/invoice-print.webp', 'class': 'attachment-large size-large wp-image-903', 'alt': 'چاپ فاکتور و رسید فروش در سیستم حسابداری ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/invoice-print.webp 880w, https://sava.af/wp-content/uploads/2026/08/invoice-print-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/invoice-print-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/user-roles.webp', 'class': 'attachment-large size-large wp-image-904', 'alt': 'تعریف چند کاربر با نقش و صلاحیت متفاوت در ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/user-roles.webp 880w, https://sava.af/wp-content/uploads/2026/08/user-roles-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/user-roles-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/document-attachment.webp', 'class': 'attachment-large size-large wp-image-905', 'alt': 'ضمیمه کردن عکس رسید و سند به فاکتور در ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/document-attachment.webp 880w, https://sava.af/wp-content/uploads/2026/08/document-attachment-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/document-attachment-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/dual-calendar.webp', 'class': 'attachment-large size-large wp-image-906', 'alt': 'پشتیبانی از تقویم هجری شمسی و میلادی در سیستم ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/dual-calendar.webp 880w, https://sava.af/wp-content/uploads/2026/08/dual-calendar-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/dual-calendar-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '545', 'src': 'https://sava.af/wp-content/uploads/2026/08/dashboard-reports.webp', 'class': 'attachment-large size-large wp-image-907', 'alt': 'داشبورد سود، فروش و موجودی در سیستم حسابداری ساوا', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/dashboard-reports.webp 880w, https://sava.af/wp-content/uploads/2026/08/dashboard-reports-300x205.webp 300w, https://sava.af/wp-content/uploads/2026/08/dashboard-reports-768x524.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+
+
+
+
+
+
+TEXT آنچه ساوا را متمایز میکند
+
+TEXT آفلاین فیرست
+
+TEXT ساوا اول روی دستگاه شما کار می‌کند، بعد با سرور هماهنگ می‌شود
+
+TEXT در سیستم‌های آنلاین، آفلاین یک حالت اضطراری و ناقص است. در ساوا ترتیب برعکس است. کار روزانه همیشه از خود دستگاه شما انجام می‌شود، و انترنت فقط برای هماهنگ‌سازی لازم است.
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '1672', 'height': '598', 'src': 'https://sava.af/wp-content/uploads/2026/08/offline-card.webp', 'class': 'attachment-full size-full wp-image-923', 'alt': 'کار سیستم حسابداری ساوا بدون انترنت، همگام\u200cسازی خودکار با سرور', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/offline-card.webp 1672w, https://sava.af/wp-content/uploads/2026/08/offline-card-300x107.webp 300w, https://sava.af/wp-content/uploads/2026/08/offline-card-1024x366.webp 1024w, https://sava.af/wp-content/uploads/2026/08/offline-card-768x275.webp 768w, https://sava.af/wp-content/uploads/2026/08/offline-card-1536x549.webp 1536w', 'sizes': '(max-width: 1672px) 100vw, 1672px'}
+
+
+
+
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '528', 'src': 'https://sava.af/wp-content/uploads/2026/08/work-on-your-pc.webp', 'class': 'attachment-large size-large wp-image-1071', 'alt': 'ذخیره امن دیتای تجارت روی دستگاه شما در سیستم ساوا 1', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/work-on-your-pc.webp 848w, https://sava.af/wp-content/uploads/2026/08/work-on-your-pc-300x198.webp 300w, https://sava.af/wp-content/uploads/2026/08/work-on-your-pc-768x507.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '528', 'src': 'https://sava.af/wp-content/uploads/2026/08/data-cync.webp', 'class': 'attachment-large size-large wp-image-1072', 'alt': 'ذخیره امن دیتای تجارت روی دستگاه شما در سیستم ساوا 2', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/data-cync.webp 848w, https://sava.af/wp-content/uploads/2026/08/data-cync-300x198.webp 300w, https://sava.af/wp-content/uploads/2026/08/data-cync-768x507.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '528', 'src': 'https://sava.af/wp-content/uploads/2026/08/export-exel.webp', 'class': 'attachment-large size-large wp-image-1070', 'alt': 'ذخیره امن دیتای تجارت روی دستگاه شما در سیستم ساوا 3 همراه با خروجی اکسل', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/export-exel.webp 848w, https://sava.af/wp-content/uploads/2026/08/export-exel-300x198.webp 300w, https://sava.af/wp-content/uploads/2026/08/export-exel-768x507.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+TEXT این مصارف اگر روی اقلام تقسیم نشوند، بیرون از قیمت جنس می‌مانند و سود واقعی معلوم نیست. ساوا این تقسیم را همان لحظهٔ ثبت خرید انجام می‌دهد.
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '750', 'src': 'https://sava.af/wp-content/uploads/2026/08/card-no-alloc-b.webp', 'class': 'attachment-large size-large wp-image-993', 'alt': 'محاسبه قیمت تمام\u200cشده کالا با کرایه حمل، گمرک و تخلیه در ساوا 1', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/card-no-alloc-b.webp 800w, https://sava.af/wp-content/uploads/2026/08/card-no-alloc-b-300x281.webp 300w, https://sava.af/wp-content/uploads/2026/08/card-no-alloc-b-768x720.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '800', 'height': '750', 'src': 'https://sava.af/wp-content/uploads/2026/08/card-profit-b.webp', 'class': 'attachment-large size-large wp-image-994', 'alt': 'محاسبه قیمت تمام\u200cشده کالا با کرایه حمل، گمرک و تخلیه در ساوا 2', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/card-profit-b.webp 800w, https://sava.af/wp-content/uploads/2026/08/card-profit-b-300x281.webp 300w, https://sava.af/wp-content/uploads/2026/08/card-profit-b-768x720.webp 768w', 'sizes': '(max-width: 800px) 100vw, 800px'}
+
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '692', 'height': '650', 'src': 'https://sava.af/wp-content/uploads/2026/08/card-USDa.webp', 'class': 'attachment-large size-large wp-image-987', 'alt': 'حسابداری چند ارز؛ افغانی، دالر و کلدار در سیستم ساوا 1', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/card-USDa.webp 692w, https://sava.af/wp-content/uploads/2026/08/card-USDa-300x282.webp 300w', 'sizes': '(max-width: 692px) 100vw, 692px'}
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '692', 'height': '650', 'src': 'https://sava.af/wp-content/uploads/2026/08/card-AFN-a.webp', 'class': 'attachment-large size-large wp-image-986', 'alt': 'حسابداری چند ارز؛ افغانی، دالر و کلدار در سیستم ساوا 2', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/card-AFN-a.webp 692w, https://sava.af/wp-content/uploads/2026/08/card-AFN-a-300x282.webp 300w', 'sizes': '(max-width: 692px) 100vw, 692px'}
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '692', 'height': '650', 'src': 'https://sava.af/wp-content/uploads/2026/08/card-PKRa.webp', 'class': 'attachment-large size-large wp-image-988', 'alt': 'حسابداری چند ارز؛ افغانی، دالر و کلدار در سیستم ساوا 3', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/card-PKRa.webp 692w, https://sava.af/wp-content/uploads/2026/08/card-PKRa-300x282.webp 300w', 'sizes': '(max-width: 692px) 100vw, 692px'}
+
+TEXT در ساوا دکمه‌ی حذف نیست،
+
+TEXT اشتباه در هر کاری پیش می‌آید. مهم این است که ردش گم نشود. در ساوا سند اشتباه باطل می‌شود ولی پاک نمی‌شود — سند درست کنارش ثبت می‌گردد.
+
+
+
+
+
+ASSET img {'loading': 'lazy', 'decoding': 'async', 'width': '737', 'height': '1024', 'src': 'https://sava.af/wp-content/uploads/2026/08/history-—-v1-stacked@2x-737x1024.webp', 'class': 'attachment-large size-large wp-image-1128', 'alt': 'اصلاح سند به\u200cجای حذف در سیستم حسابداری ساوا، تاریخچه محفوظ', 'srcset': 'https://sava.af/wp-content/uploads/2026/08/history-—-v1-stacked@2x-737x1024.webp 737w, https://sava.af/wp-content/uploads/2026/08/history-—-v1-stacked@2x-216x300.webp 216w, https://sava.af/wp-content/uploads/2026/08/history-—-v1-stacked@2x-768x1066.webp 768w, https://sava.af/wp-content/uploads/2026/08/history-—-v1-stacked@2x.webp 880w', 'sizes': '(max-width: 737px) 100vw, 737px'}
+
+
+TEXT ساوا از مرورگر گوشی هم باز می‌شود — بدون نصب اپلیکیشن. در بازار، در سفر یا در خانه، ببینید امروز چه فروخته شد و چقدر باقی مانده.
+
+
+
+
+TEXT کار شما بدون وقفه ادامه می‌یابد. تمام عملیات روی دستگاه ذخیره می‌شود و پس از برقراری اتصال به‌طور خودکار همگام می‌شود. حتی اگر یک هفته اینترنت نباشد، هیچ فاکتوری از دست نمی‌رود.
+
+
+TEXT خیر. ساوا از هر مرورگری کار می‌کند، بدون نصب. با ایمیل، واتساپ یا حساب گوگل وارد شوید و در کمتر از یک دقیقه سیستم شما آماده است. اگر نیاز به راهنمایی داشتید، تیم ما به زبان دری و پشتو کمک می‌کند.
+
+TEXT داده‌های شما روی دستگاه خودتان ذخیره می‌شود و به شکل رمزنگاری‌شده با سرور همگام می‌شود. هیچ‌کس به داده‌های شما دسترسی ندارد، حتی تیم ساوا. تاریخچه‌ی کامل هر تغییر ثبت می‌شود.
+
+
+
+
+
+
+
+
+ASSET img {'src': 'https://sava.af/wp-content/uploads/2026/08/final-logo-blue.png', 'alt': 'ساوا'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
